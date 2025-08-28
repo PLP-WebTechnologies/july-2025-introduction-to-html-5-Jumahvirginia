@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple website demonstrating accessibility and SEO best practices.">
+    <title>Site with Accessibility and SEO Basics</title>
+</head>
+<body>
+     <header>
+    <h1>My Accessible and SEO-Friendly Website</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <article>
+      <header>
+        <h2 id="about">About This Page</h2>
+        <p>This page uses semantic HTML elements for better accessibility and SEO.</p>
+      </header>
+
+      <section id="features" aria-label="features-heading">
+        <h2 id="features-heading">Key Features</h2>
+        <ul>
+          <li>Semantic structure with <code>header</code>, <code>main</code>, <code>article</code>, <code>section</code>, and <code>footer</code>.</li>
+          <li>Proper heading hierarchy (<code>h1</code> → <code>h2</code>).</li>
+          <li>Descriptive links and meaningful text content.</li>
+          <li>Accessible navigation with lists.</li>
+          <li>Image with alternative text.</li>
+        </ul>
+        <figure>
+          <img src="example.jpg" alt="An illustration showing semantic HTML structure">
+          <figcaption>Figure: Example image with descriptive alt text.</figcaption>
+        </figure>
+      </section>
+    </article>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="/submit" method="post">
+        <p><label for="name">Name:</label> <input type="text" id="name" name="name" required></p>
+        <p><label for="email">Email:</label> <input type="email" id="email" name="email" required></p>
+        <p><button type="submit">Send</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Accessibility and SEO Basics </p>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+</html>
